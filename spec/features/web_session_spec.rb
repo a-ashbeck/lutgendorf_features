@@ -19,6 +19,7 @@ feature 'Participant selects web session' do
   scenario 'and completes session 1' do
     participant_1.sign_in
     web_session.click_web_session
+    # How to fill in mulltiple radio buttons?
     web_session.fill_form
     web_session.click_go_to_web_session
 
