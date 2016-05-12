@@ -10,13 +10,6 @@ def participant_1
   )
 end
 
-def participant_2
-  @participant ||= User.new(
-    email: ENV['participant_2_email'],
-    password: ENV['participant_2_password']
-  )
-end
-
 feature 'Participant logs in' do
   after do
     expect(participant_1).to have_login_page_visible
