@@ -18,7 +18,7 @@ end
 feature 'Participant completes daily relaxation' do
   scenario 'week 1 audio session' do
     participant_1.sign_in
-    daily_relaxation.click
+    daily_relaxation.open
 
     expect(daily_relaxation).to be_visible
 
@@ -39,7 +39,9 @@ feature 'Participant completes daily relaxation' do
     daily_relaxation.check_no_audio
     daily_relaxation.listen_to_audio
     daily_relaxation.click_continue
-    daily_relaxation.listen_to_audio
+
+    expect(daily_relaxation).to have_post_relaxation_rating_page
+
     daily_relaxation.move_slider_to_0
     daily_relaxation.click_submit
 

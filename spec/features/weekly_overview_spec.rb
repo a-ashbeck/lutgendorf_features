@@ -24,19 +24,19 @@ feature 'Participant selects weekly overview' do
 
     weekly_overview.click_chapter_1
 
-    expect(weekly_overview).to have_chapter_1_page_1_visble
+    expect(weekly_overview).to have_chapter_1_page_1_visible
 
     weekly_overview.click_continue
 
-    expect(weekly_overview).to have_chapter_1_page_2_visble
+    expect(weekly_overview).to have_chapter_1_page_2_visible
 
     weekly_overview.click_continue
 
-    expect(weekly_overview).to have_chapter_1_page_3_visble
+    expect(weekly_overview).to have_chapter_1_page_3_visible
 
     weekly_overview.click_continue
 
-    expect(weekly_overview).to have_chapter_1_page_4_visble
+    expect(weekly_overview).to have_chapter_1_page_4_visible
 
     weekly_overview.click_continue
 
@@ -51,23 +51,23 @@ feature 'Participant selects weekly overview' do
 
     weekly_overview.click_chapter_2
 
-    expect(weekly_overview).to have_chapter_2_page_1_visble
+    expect(weekly_overview).to have_chapter_2_page_1_visible
 
     weekly_overview.click_continue
 
-    expect(weekly_overview).to have_chapter_2_page_2_visble
+    expect(weekly_overview).to have_chapter_2_page_2_visible
 
     weekly_overview.click_continue
 
-    expect(weekly_overview).to have_chapter_2_page_3_visble
+    expect(weekly_overview).to have_chapter_2_page_3_visible
 
     weekly_overview.click_continue
 
-    expect(weekly_overview).to have_chapter_2_page_4_visble
+    expect(weekly_overview).to have_chapter_2_page_4_visible
 
     weekly_overview.click_continue
 
-    expect(weekly_overview).to have_chapter_2_page_5_visble
+    expect(weekly_overview).to have_chapter_2_page_5_visible
 
     weekly_overview.click_continue
 
@@ -82,23 +82,23 @@ feature 'Participant selects weekly overview' do
 
     weekly_overview.click_chapter_3
 
-    expect(weekly_overview).to have_chapter_3_page_1_visble
+    expect(weekly_overview).to have_chapter_3_page_1_visible
 
     weekly_overview.click_continue
 
-    expect(weekly_overview).to have_chapter_3_page_2_visble
+    expect(weekly_overview).to have_chapter_3_page_2_visible
 
     weekly_overview.click_continue
 
-    expect(weekly_overview).to have_chapter_3_page_3_visble
+    expect(weekly_overview).to have_chapter_3_page_3_visible
 
     weekly_overview.click_continue
 
-    expect(weekly_overview).to have_chapter_3_page_4_visble
+    expect(weekly_overview).to have_chapter_3_page_4_visible
 
     weekly_overview.click_continue
 
-    expect(weekly_overview).to have_chapter_3_page_5_visble
+    expect(weekly_overview).to have_chapter_3_page_5_visible
 
     weekly_overview.click_continue
 
@@ -113,23 +113,23 @@ feature 'Participant selects weekly overview' do
 
     weekly_overview.click_chapter_4
 
-    expect(weekly_overview).to have_chapter_4_page_1_visble
+    expect(weekly_overview).to have_chapter_4_page_1_visible
 
     weekly_overview.click_continue
 
-    expect(weekly_overview).to have_chapter_4_page_2_visble
+    expect(weekly_overview).to have_chapter_4_page_2_visible
 
     weekly_overview.click_continue
 
-    expect(weekly_overview).to have_chapter_4_page_3_visble
+    expect(weekly_overview).to have_chapter_4_page_3_visible
 
     weekly_overview.click_continue
 
-    expect(weekly_overview).to have_chapter_4_page_4_visble
+    expect(weekly_overview).to have_chapter_4_page_4_visible
 
     weekly_overview.click_continue
 
-    expect(weekly_overview).to have_chapter_4_page_5_visble
+    expect(weekly_overview).to have_chapter_4_page_5_visible
 
     weekly_overview.click_continue
 
@@ -144,23 +144,23 @@ feature 'Participant selects weekly overview' do
 
     weekly_overview.click_chapter_5
 
-    expect(weekly_overview).to have_chapter_5_page_1_visble
+    expect(weekly_overview).to have_chapter_5_page_1_visible
 
     weekly_overview.click_continue
 
-    expect(weekly_overview).to have_chapter_5_page_2_visble
+    expect(weekly_overview).to have_chapter_5_page_2_visible
 
     weekly_overview.click_continue
 
-    expect(weekly_overview).to have_chapter_5_page_3_visble
+    expect(weekly_overview).to have_chapter_5_page_3_visible
 
     weekly_overview.click_continue
 
-    expect(weekly_overview).to have_chapter_5_page_4_visble
+    expect(weekly_overview).to have_chapter_5_page_4_visible
 
     weekly_overview.click_continue
 
-    expect(weekly_overview).to have_chapter_5_page_5_visble
+    expect(weekly_overview).to have_chapter_5_page_5_visible
 
     weekly_overview.click_continue
 
@@ -175,23 +175,23 @@ feature 'Participant selects weekly overview' do
 
     weekly_overview.click_chapter_6
 
-    expect(weekly_overview).to have_chapter_6_page_1_visble
+    expect(weekly_overview).to have_chapter_6_page_1_visible
 
     weekly_overview.click_continue
 
-    expect(weekly_overview).to have_chapter_6_page_2_visble
+    expect(weekly_overview).to have_chapter_6_page_2_visible
 
     weekly_overview.click_continue
 
-    expect(weekly_overview).to have_chapter_6_page_3_visble
+    expect(weekly_overview).to have_chapter_6_page_3_visible
 
     weekly_overview.click_continue
 
-    expect(weekly_overview).to have_chapter_6_page_4_visble
+    expect(weekly_overview).to have_chapter_6_page_4_visible
 
     weekly_overview.click_continue
 
-    expect(weekly_overview).to have_chapter_6_page_5_visble
+    expect(weekly_overview).to have_chapter_6_page_5_visible
 
     weekly_overview.click_continue
 
@@ -206,23 +206,23 @@ feature 'Participant selects weekly overview' do
 
     weekly_overview.click_chapter_7
 
-    expect(weekly_overview).to have_chapter_7_page_1_visble
+    expect(weekly_overview).to have_chapter_7_page_1_visible
 
     weekly_overview.click_continue
 
-    expect(weekly_overview).to have_chapter_7_page_2_visble
+    expect(weekly_overview).to have_chapter_7_page_2_visible
 
     weekly_overview.click_continue
 
-    expect(weekly_overview).to have_chapter_7_page_3_visble
+    expect(weekly_overview).to have_chapter_7_page_3_visible
 
     weekly_overview.click_continue
 
-    expect(weekly_overview).to have_chapter_7_page_4_visble
+    expect(weekly_overview).to have_chapter_7_page_4_visible
 
     weekly_overview.click_continue
 
-    expect(weekly_overview).to have_chapter_7_page_5_visble
+    expect(weekly_overview).to have_chapter_7_page_5_visible
 
     weekly_overview.click_continue
 
@@ -237,19 +237,19 @@ feature 'Participant selects weekly overview' do
 
     weekly_overview.click_chapter_8
 
-    expect(weekly_overview).to have_chapter_8_page_1_visble
+    expect(weekly_overview).to have_chapter_8_page_1_visible
 
     weekly_overview.click_continue
 
-    expect(weekly_overview).to have_chapter_8_page_2_visble
+    expect(weekly_overview).to have_chapter_8_page_2_visible
 
     weekly_overview.click_continue
 
-    expect(weekly_overview).to have_chapter_8_page_3_visble
+    expect(weekly_overview).to have_chapter_8_page_3_visible
 
     weekly_overview.click_continue
 
-    expect(weekly_overview).to have_chapter_8_page_4_visble
+    expect(weekly_overview).to have_chapter_8_page_4_visible
 
     weekly_overview.click_continue
 
@@ -264,23 +264,23 @@ feature 'Participant selects weekly overview' do
 
     weekly_overview.click_chapter_9
 
-    expect(weekly_overview).to have_chapter_9_page_1_visble
+    expect(weekly_overview).to have_chapter_9_page_1_visible
 
     weekly_overview.click_continue
 
-    expect(weekly_overview).to have_chapter_9_page_2_visble
+    expect(weekly_overview).to have_chapter_9_page_2_visible
 
     weekly_overview.click_continue
 
-    expect(weekly_overview).to have_chapter_9_page_3_visble
+    expect(weekly_overview).to have_chapter_9_page_3_visible
 
     weekly_overview.click_continue
 
-    expect(weekly_overview).to have_chapter_9_page_4_visble
+    expect(weekly_overview).to have_chapter_9_page_4_visible
 
     weekly_overview.click_continue
 
-    expect(weekly_overview).to have_chapter_9_page_5_visble
+    expect(weekly_overview).to have_chapter_9_page_5_visible
 
     weekly_overview.click_continue
 
@@ -295,19 +295,19 @@ feature 'Participant selects weekly overview' do
 
     weekly_overview.click_chapter_10
 
-    expect(weekly_overview).to have_chapter_10_page_10_visble
+    expect(weekly_overview).to have_chapter_10_page_10_visible
 
     weekly_overview.click_continue
 
-    expect(weekly_overview).to have_chapter_10_page_2_visble
+    expect(weekly_overview).to have_chapter_10_page_2_visible
 
     weekly_overview.click_continue
 
-    expect(weekly_overview).to have_chapter_10_page_3_visble
+    expect(weekly_overview).to have_chapter_10_page_3_visible
 
     weekly_overview.click_continue
 
-    expect(weekly_overview).to have_chapter_10_page_4_visble
+    expect(weekly_overview).to have_chapter_10_page_4_visible
 
     weekly_overview.click_continue
 

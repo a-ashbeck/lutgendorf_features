@@ -12,7 +12,7 @@ class Participant
     # def open
     # end
 
-    def click
+    def open
       find('#daily_relaxation_practice').click
     end
 
@@ -73,6 +73,11 @@ class Participant
     def check_no_audio
       check 'Check if you prefer to guide this ' \
               'relaxation session without audio.'
+    end
+
+    def has_post_relaxation_rating_page?
+      has_text? 'Using the following scale, rate your stress level right ' \
+                'now after you have practiced your relaxation session'
     end
 
     def click_submit

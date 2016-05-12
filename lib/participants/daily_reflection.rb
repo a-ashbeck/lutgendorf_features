@@ -5,7 +5,7 @@ class Participant
   class DailyReflection
     include Capybara::DSL
 
-    def click
+    def open
       find('#daily_journal').click
     end
 
