@@ -38,8 +38,48 @@ class Participant
       click_on 'Continue'
     end
 
-    def click_week1_audio
+    def click_week_1_audio
       click_on 'Week 1: Deep Breathing & Progressive Muscle Relaxation'
+    end
+
+    def click_week_2a_audio
+      click_on 'Week 2a'
+    end
+
+    def click_week_2b_audio
+      click_on 'Week 2b'
+    end
+
+    def click_week_3_audio
+      click_on 'Week 3: Autogenics'
+    end
+
+    def click_week_4_audio
+      click_on 'Week 4: Compassion Body Scan'
+    end
+
+    def click_week_5_audio
+      click_on 'Week 5: River Meditation'
+    end
+
+    def click_week_6_audio
+      click_on 'Week 6: Mindfulness 1'
+    end
+
+    def click_week_7_audio
+      click_on 'Week 7: Mindfulness 2'
+    end
+
+    def click_week_8_audio
+      click_on 'Week 8: Loving Kindness'
+    end
+
+    def click_week_9_audio
+      click_on 'Week 9: Light Imagery'
+    end
+
+    def click_week_10_audio
+      click_on 'Week 10: Cove'
     end
 
     def has_audio_modal_visible?
@@ -72,7 +112,7 @@ class Participant
 
     def check_no_audio
       check 'Check if you prefer to guide this ' \
-              'relaxation session without audio.'
+            'relaxation session without audio.'
     end
 
     def has_post_relaxation_rating_page?
