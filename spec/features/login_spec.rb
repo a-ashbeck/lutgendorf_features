@@ -18,12 +18,16 @@ def participant_2
 end
 
 feature 'Participant logs in' do
-  scenario 'successfully with participant first name displayed' do
+  scenario 'successfully with participant first name displayed and logs out' do
     participant_1.sign_in
 
-    expect(participant_1).to be_signed_in
+    expect(participant_1).to have_home_visible
 
     expect(participant_1).to have_name_in_welcome
+
+    participant_1.sign_out
+
+    expect(participant_1).to have_login_page_visible
   end
 
   scenario 'with an incorrect password' do
