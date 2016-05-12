@@ -35,15 +35,6 @@ class Participant
   end
 
   def has_home_visible?
-    has_text? 'Welcome,'
+    has_text? "Welcome, #{@ptp_name}"
   end
-
-  def has_name_in_welcome?
-    has_text? @ptp_name
-  end
-
-  private
-
-
-
 end

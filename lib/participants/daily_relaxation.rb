@@ -21,18 +21,24 @@ class Participant
                   'now before you practice your relaxation session'
     end
 
-    def move_slider_to_0
+    # Issue with getting this to run
+    def move_slider
       find '#range'
-      execute_script('$("input#range").val(0)')
+      var = rand(0..10).to_s
+      execute_script("$(\"input#range\").val(#{var}")
     end
 
-    def move_slider_to_10
-      execute_script('$("input#range").val(10)')
-    end
+    #def move_slider_to_0
+    #  execute_script('$("input#range").val(0)')
+    #end
 
-    def move_slider_to_6
-      execute_script('$("input#range").val(6)')
-    end
+    #def move_slider_to_10
+    #  execute_script('$("input#range").val(10)')
+    #end
+
+    #def move_slider_to_6
+    #  execute_script('$("input#range").val(6)')
+    #end
 
     def click_continue
       click_on 'Continue'
@@ -110,6 +116,7 @@ class Participant
       click_on 'Close'
     end
 
+    # Issue with getting this to run, did not before.
     def check_no_audio
       check 'Check if you prefer to guide this ' \
             'relaxation session without audio.'

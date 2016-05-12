@@ -22,7 +22,7 @@ feature 'Participant completes daily relaxation' do
 
     expect(daily_relaxation).to be_visible
 
-    daily_relaxation.move_slider_to_0
+    daily_relaxation.move_slider
     daily_relaxation.click_continue
   end
 
@@ -45,7 +45,7 @@ feature 'Participant completes daily relaxation' do
 
     expect(daily_relaxation).to have_post_relaxation_rating_page
 
-    daily_relaxation.move_slider_to_0
+    daily_relaxation.move_slider
     daily_relaxation.click_submit
 
     expect(daily_relaxation).to have_home_visible

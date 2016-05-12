@@ -9,10 +9,12 @@ class Participant
       find('#daily_journal').click
     end
 
+    # Issue with getting this to run
     def click_todays_reflection
       find('"Today\'s" <br> "Reflections"').click
     end
 
+    # Issue with getting this to run
     def click_past_reflections
       click_on 'Past Reflections'
     end
@@ -25,6 +27,7 @@ class Participant
       has_text? 'Previous Reflections'
     end
 
+    # Despite the earlier failures, this still seems to get saved.
     def fill_text_box_with_jibberish
       fill_in 'daily_journal[meaningful_text]',
         with: 'sd;flkgj;dlkjhkhjgkjhgkslfkjg;ds gjdlfskjgnlskdfg ' \
