@@ -9,9 +9,6 @@ class Participant
       "#{ENV['Base_URL']}/navigator/contexts/daily_relaxation_practice"
     end
 
-    # def open
-    # end
-
     def open
       find('#daily_relaxation_practice').click
     end
@@ -21,24 +18,10 @@ class Participant
                   'now before you practice your relaxation session'
     end
 
-    # Issue with getting this to run
     def move_slider
       find '#range'
-      var = rand(0..10).to_s
-      execute_script("$(\"input#range\").val(#{var}")
+      execute_script("$(\"input#range\").val(#{rand(10)})")
     end
-
-    #def move_slider_to_0
-    #  execute_script('$("input#range").val(0)')
-    #end
-
-    #def move_slider_to_10
-    #  execute_script('$("input#range").val(10)')
-    #end
-
-    #def move_slider_to_6
-    #  execute_script('$("input#range").val(6)')
-    #end
 
     def click_continue
       click_on 'Continue'
@@ -116,7 +99,10 @@ class Participant
       click_on 'Close'
     end
 
-    # Issue with getting this to run, did not before.
+    def scroll_down
+      execute_script('window.scrollBy(0,1500)')
+    end
+
     def check_no_audio
       check 'Check if you prefer to guide this ' \
             'relaxation session without audio.'

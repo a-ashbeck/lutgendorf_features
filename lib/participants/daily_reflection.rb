@@ -11,12 +11,12 @@ class Participant
 
     # Issue with getting this to run
     def click_todays_reflection
-      find('"Today\'s" <br> "Reflections"').click
+      find('a', text: 'Today\'s Reflections').click
     end
 
     # Issue with getting this to run
     def click_past_reflections
-      click_on 'Past Reflections'
+      find('a', text: 'Past Reflections').click
     end
 
     def has_todays_reflection_page_visible?

@@ -21,7 +21,9 @@ feature 'Participant selects web session' do
     web_session.click_web_session
     # How to fill in mulltiple radio buttons?
     web_session.fill_form
+    web_session.scroll_down
     web_session.click_go_to_web_session
+    web_session.close_new_tabs
 
   end
 end

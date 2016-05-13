@@ -19,10 +19,11 @@ feature "Participant selects daily reflection" do
   before do
     participant_1.sign_in
     daily_reflection.open
-    daily_reflection.click_todays_reflection
   end
 
   scenario "and completes today's reflection" do
+    daily_reflection.click_todays_reflection
+
     expect(daily_reflection).to have_todays_reflection_page_visible
 
     daily_reflection.fill_text_box_with_jibberish
@@ -32,6 +33,8 @@ feature "Participant selects daily reflection" do
   end
 
   scenario "and views previous reflections" do
+    daily_reflection.click_past_reflections
+
     expect(daily_reflection).to have_past_reflections_page_visible
 
     daily_reflection.click_back_button
