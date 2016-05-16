@@ -34,6 +34,6 @@ feature 'Participant selects web session' do
     web_session.click_continue
     web_session.respond_to_sliders
     web_session.scroll_down
-    web_session.click_continue
+    web_session.click_submit
   end
 end

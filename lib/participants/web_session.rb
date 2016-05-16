@@ -1,7 +1,7 @@
 # filename: ./lib/web_session.rb
 
 class Participant
-  # Page object for Daily Reflection
+  # Page object for Web Session
   class WebSession
     include Capybara::DSL
 
