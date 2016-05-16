@@ -9,22 +9,21 @@ class Participant
       find('#webex_session').click
     end
 
-    def fill_form
-      # all('radio').map(choose '2')
-
-      # rows = (0..4).map { |i| all('.row')[i] }
+    def fill_form_pre_web_session
       find('.row', match: :first)
-      # [0..4].each do |i|
-      #   within(all('.row')[i]) { choose '2' }
-      # end
-
-      # radios = (0..4).map { |i| all('input', text: '2')[i] }
-      # radios.each { |r| choose r }
-
-      emotions = ['anxious', 'sad']
+      emotions = ['anxious', 'sad', 'confused', 'energy', 'fatigue']
 
       emotions.each do |e|
         find("#group_session_mood_summary_pre_#{e}_#{rand(4)}").click
+      end
+    end
+
+    def fill_form_post_web_session
+      find('.row', match: :first)
+      emotions = ['anxious', 'sad', 'confused', 'energy', 'fatigue']
+
+      emotions.each do |e|
+        find("#group_session_mood_summary_post_#{e}_#{rand(4)}").click
       end
     end
 
@@ -44,6 +43,23 @@ class Participant
         page.driver.browser.close
         page.driver.browser.switch_to.window(window.first)
       end
+
+      def has_post_session_questions_visible?
+        has_text? 'Please rate your feelings now that your ' \
+                  'group session has been completed.'
+      end
+    end
+
+    def click_continue
+      click 'Continue'
+    end
+
+    def respond_to_sliders
+      
+    end
+
+    def click_submit
+      click 'Submit'
     end
   end
 end
