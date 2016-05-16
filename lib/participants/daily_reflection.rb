@@ -27,7 +27,6 @@ class Participant
       has_text? 'Previous Reflections'
     end
 
-    # Despite the earlier failures, this still seems to get saved.
     def fill_text_box_with_jibberish
       fill_in 'daily_journal[meaningful_text]',
         with: 'sd;flkgj;dlkjhkhjgkjhgkslfkjg;ds gjdlfskjgnlskdfg ' \
@@ -91,6 +90,18 @@ class Participant
 
     def click_submit
       click_on 'Submit'
+    end
+
+    def has_yesterdays_entry_visible?
+      has_css?('a', text: (Date.today - 1).strftime('%B %d, %Y'))
+    end
+
+    def click_yesterdays_entry
+      find('a', text: (Date.today - 1).strftime('%B %d, %Y')).click
+    end
+
+    def has_content_in_yesterdays_entry?
+      has_text? 'test1'
     end
 
     def has_home_visible?

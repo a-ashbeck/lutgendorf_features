@@ -38,10 +38,14 @@ feature "Participant selects daily reflection" do
     expect(daily_reflection).to have_past_reflections_page_visible
 
     daily_reflection.click_back_button
-    daily_reflection.click_todays_reflection
+    daily_reflection.click_past_reflections
 
     expect(daily_reflection).to have_past_reflections_page_visible
 
+    expect(daily_reflection).to have_yesterdays_entry_visible
 
+    daily_reflection.click_yesterdays_entry
+
+    expect(daily_reflection).to have_content_in_yesterday_entry
   end
 end

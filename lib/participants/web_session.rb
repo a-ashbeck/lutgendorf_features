@@ -62,6 +62,7 @@ class Participant
       has_css?('#logo-text')
     end
 
+
     # def click_submit
     #   click 'Submit'
     # end
