@@ -43,23 +43,27 @@ class Participant
         page.driver.browser.close
         page.driver.browser.switch_to.window(window.first)
       end
-
-      def has_post_session_questions_visible?
-        has_text? 'Please rate your feelings now that your ' \
-                  'group session has been completed.'
-      end
     end
+
+    # def has_post_session_questions_visible?
+    #   has_text? 'Please rate your feelings now that your ' \
+    #             'group session has been completed.'
+    # end
 
     def click_continue
       click 'Continue'
     end
 
-    def respond_to_sliders
+    # def respond_to_sliders
       
+    # end
+
+    def has_home_visible?
+      has_css?('#logo-text')
     end
 
-    def click_submit
-      click 'Submit'
-    end
+    # def click_submit
+    #   click 'Submit'
+    # end
   end
 end
