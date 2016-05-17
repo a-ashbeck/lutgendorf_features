@@ -9,12 +9,10 @@ class Participant
       find('#daily_journal').click
     end
 
-    # Issue with getting this to run
     def click_todays_reflection
       find('a', text: 'Today\'s Reflections').click
     end
 
-    # Issue with getting this to run
     def click_past_reflections
       find('a', text: 'Past Reflections').click
     end
