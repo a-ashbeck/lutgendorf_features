@@ -15,7 +15,7 @@ def daily_reflection
   @daily_reflection ||= Participant::DailyReflection.new
 end
 
-feature "Participant selects daily reflection" do
+feature 'Participant selects daily reflection' do
   before do
     participant_1.sign_in
     daily_reflection.open
@@ -32,7 +32,7 @@ feature "Participant selects daily reflection" do
     expect(daily_reflection).to have_home_visible
   end
 
-  scenario "and views previous reflections" do
+  scenario 'and views previous reflections' do
     daily_reflection.click_past_reflections
 
     expect(daily_reflection).to have_past_reflections_page_visible

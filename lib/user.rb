@@ -1,5 +1,6 @@
 # filename: ./lib/users.rb
 
+# Page object for participant
 class Participant
   include Capybara::DSL
 

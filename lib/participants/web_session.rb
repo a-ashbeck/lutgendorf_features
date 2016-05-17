@@ -55,7 +55,7 @@ class Participant
     end
 
     # def respond_to_sliders
-      
+
     # end
 
     def click_home_icon
@@ -63,9 +63,8 @@ class Participant
     end
 
     def has_home_visible?
-    has_text? "Welcome, #{@ptp_name}"
+      has_text? "Welcome, #{@ptp_name}"
     end
-
 
     # def click_submit
     #   click 'Submit'
