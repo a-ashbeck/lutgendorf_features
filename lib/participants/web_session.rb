@@ -58,8 +58,12 @@ class Participant
       
     # end
 
+    def click_home_icon
+      find('#home_nav').click
+    end
+
     def has_home_visible?
-      has_css?('#logo-text')
+    has_text? "Welcome, #{@ptp_name}"
     end
 
 
