@@ -15,5 +15,5 @@ example_id                                     | status | run_time        |
 ./spec/features/daily_relaxation_spec.rb[1:11] | passed | 8.4 seconds     |
 ./spec/features/login_spec.rb[1:1]             | passed | 1.54 seconds    |
 ./spec/features/login_spec.rb[1:2]             | passed | 0.61501 seconds |
-./spec/features/web_session_spec.rb[1:1]       | passed | 3.4 seconds     |
-./spec/features/weekly_overview_spec.rb[1:1]   | passed | 7.14 seconds    |
+./spec/features/web_session_spec.rb[1:1]       | passed | 5.1 seconds     |
+./spec/features/weekly_overview_spec.rb[1:1]   | failed | 9.39 seconds    |

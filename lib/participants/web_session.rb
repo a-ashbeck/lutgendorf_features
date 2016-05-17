@@ -45,18 +45,9 @@ class Participant
       end
     end
 
-    # def has_post_session_questions_visible?
-    #   has_text? 'Please rate your feelings now that your ' \
-    #             'group session has been completed.'
-    # end
-
     def click_continue
       click 'Continue'
     end
-
-    # def respond_to_sliders
-
-    # end
 
     def click_home_icon
       find('#home_nav').click
@@ -65,9 +56,5 @@ class Participant
     def has_home_visible?
       has_text? "Welcome, #{@ptp_name}"
     end
-
-    # def click_submit
-    #   click 'Submit'
-    # end
   end
 end
