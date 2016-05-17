@@ -85,11 +85,15 @@ class Participant
     end
 
     def click_back_button
-      find('.fa fa-chevron-circle-left fa-4x').click
+      find('.fa-4x').click
     end
 
     def click_submit
       click_on 'Submit'
+    end
+
+    def scroll_down
+      execute_script('window.scrollBy(0,1500)')
     end
 
     def has_yesterdays_entry_visible?
@@ -101,11 +105,11 @@ class Participant
     end
 
     def has_content_in_yesterdays_entry?
-      has_text? 'test1'
+      has_text? 'Meaningful Moment: test1'
     end
 
     def has_home_visible?
-      has_css?('#logo-text')
+    has_text? "Welcome, #{@ptp_name}"
     end
   end
 end
