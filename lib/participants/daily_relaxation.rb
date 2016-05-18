@@ -75,9 +75,9 @@ class Participant
       has_css?('#modal-window')
     end
 
-    def listen_to_audio
-      sleep(1)
-    end
+    # def listen_to_audio
+    #   sleep(0.25)
+    # end
 
     def click_play
       click_on 'play'
