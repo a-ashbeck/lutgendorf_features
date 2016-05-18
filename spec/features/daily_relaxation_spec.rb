@@ -20,7 +20,6 @@ def check_audio
   daily_relaxation.click_mute
   daily_relaxation.click_unmute
   daily_relaxation.click_stop
-  daily_relaxation.click_close
 end
 
 def audio_test
@@ -29,6 +28,7 @@ def audio_test
   expect(daily_relaxation).to have_audio_modal_visible
 
   check_audio
+  daily_relaxation.click_close
 end
 
 feature 'Participant completes daily relaxation' do

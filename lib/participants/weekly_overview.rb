@@ -14,9 +14,7 @@ class Participant
     end
 
     def click_chapter_cycle
-      num = (0..9).map(&:to_s)
-
-      num.each do |i|
+      (0..9).each do |i|
         find("#lesson-#{i}").click
         yield
       end

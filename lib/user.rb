@@ -29,12 +29,6 @@ class Participant
     click_on 'Sign Out'
   end
 
-  def sign_in_wrong_password
-    visit login_page
-    fill_in 'Email', with: @email
-    fill_in 'Password', with: 'fakepassword'
-  end
-
   def click_home_icon
     find('#home_nav').click
   end

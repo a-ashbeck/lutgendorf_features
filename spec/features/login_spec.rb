@@ -10,6 +10,13 @@ def participant_1
   )
 end
 
+def bad_participant
+  @bad_participant ||= Participant.new(
+    email: 'fake@fake.com',
+    password: 'fake'
+  )
+end
+
 feature 'Participant logs in' do
   scenario 'successfully with participant first name displayed and logs out' do
     participant_1.sign_in
@@ -22,8 +29,8 @@ feature 'Participant logs in' do
   end
 
   scenario 'with an incorrect password' do
-    participant_1.sign_in_wrong_password
+    bad_participant.sign_in
 
-    expect(participant_1).to have_login_page_visible
+    expect(bad_participant).to have_login_page_visible
   end
 end

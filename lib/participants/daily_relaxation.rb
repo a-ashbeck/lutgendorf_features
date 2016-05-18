@@ -91,10 +91,6 @@ class Participant
       click_on 'Close'
     end
 
-    def scroll_down
-      execute_script('window.scrollBy(0,1500)')
-    end
-
     def check_no_audio
       check 'Check if you prefer to guide this ' \
             'relaxation session without audio.'

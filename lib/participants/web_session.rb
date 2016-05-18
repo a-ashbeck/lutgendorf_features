@@ -22,6 +22,11 @@ class Participant
       click_on 'Go to your web session'
     end
 
+    def has_web_session_form_visible?
+      has_text? 'Please rate your feelings before your group session. ' \
+                'When you are done, you will be directed to your web meeting.'
+    end
+
     def close_new_tabs
       window = page.driver.browser.window_handles
 
