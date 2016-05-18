@@ -20,12 +20,12 @@ feature 'Participant selects web session' do
     participant_1.sign_in
     web_session.click_web_session
     sleep(0.5)
-    web_session.scroll_down
+    participant_1.scroll_down
     web_session.fill_form_pre_web_session
     web_session.click_go_to_web_session
     web_session.close_new_tabs
-    web_session.click_home_icon
+    participant_1.click_home_icon
 
-    expect(web_session).to have_home_visible
+    expect(participant_1).to have_home_visible
   end
 end

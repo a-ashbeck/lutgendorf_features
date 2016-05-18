@@ -18,11 +18,11 @@ end
 def check_slides
   expect(weekly_overview).to have_slide_visible
 
-  weekly_overview.click_continue
+  participant_1.click_continue
 
   expect(weekly_overview).to have_slide_visible
 
-  weekly_overview.click_continue
+  participant_1.click_continue
 end
 
 feature 'Participant selects weekly overview' do

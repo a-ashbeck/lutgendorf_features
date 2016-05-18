@@ -27,9 +27,9 @@ feature 'Participant selects daily reflection' do
     expect(daily_reflection).to have_todays_reflection_page_visible
 
     daily_reflection.fill_text_box_with_jibberish
-    daily_reflection.click_submit
+    participant_1.click_submit
 
-    expect(daily_reflection).to have_home_visible
+    expect(participant_1).to have_home_visible
   end
 
   scenario 'and views previous reflections' do
@@ -42,12 +42,12 @@ feature 'Participant selects daily reflection' do
 
     expect(daily_reflection).to have_past_reflections_page_visible
 
-    daily_reflection.scroll_down
+    participant_1.scroll_down
 
     expect(daily_reflection).to have_yesterdays_entry_visible
 
     daily_reflection.click_yesterdays_entry
-    daily_reflection.scroll_down
+    participant_1.scroll_down
 
     expect(daily_reflection).to have_content_in_yesterdays_entry
   end

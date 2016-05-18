@@ -57,14 +57,6 @@ class Participant
       find('.fa-4x').click
     end
 
-    def click_submit
-      click_on 'Submit'
-    end
-
-    def scroll_down
-      execute_script('window.scrollBy(0,1500)')
-    end
-
     def has_yesterdays_entry_visible?
       has_css?('a', text: (Date.today - 1).strftime('%B %d, %Y'))
     end
@@ -75,10 +67,6 @@ class Participant
 
     def has_content_in_yesterdays_entry?
       has_text? 'Meaningful Moment: test1'
-    end
-
-    def has_home_visible?
-      has_text? "Welcome, #{@ptp_name}"
     end
   end
 end

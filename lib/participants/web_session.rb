@@ -27,10 +27,6 @@ class Participant
       end
     end
 
-    def scroll_down
-      execute_script('window.scrollBy(0,1500)')
-    end
-
     def click_go_to_web_session
       click_on 'Go to your web session'
     end
@@ -43,18 +39,6 @@ class Participant
         page.driver.browser.close
         page.driver.browser.switch_to.window(window.first)
       end
-    end
-
-    def click_continue
-      click 'Continue'
-    end
-
-    def click_home_icon
-      find('#home_nav').click
-    end
-
-    def has_home_visible?
-      has_text? "Welcome, #{@ptp_name}"
     end
   end
 end

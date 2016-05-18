@@ -1,9 +1,9 @@
 example_id                                    | status | run_time        |
 --------------------------------------------- | ------ | --------------- |
-./spec/features/daily_reflection_spec.rb[1:1] | passed | 6.82 seconds    |
-./spec/features/daily_reflection_spec.rb[1:2] | passed | 2.42 seconds    |
-./spec/features/daily_relaxation_spec.rb[1:1] | passed | 17.12 seconds   |
-./spec/features/login_spec.rb[1:1]            | passed | 1.41 seconds    |
-./spec/features/login_spec.rb[1:2]            | passed | 0.64665 seconds |
-./spec/features/web_session_spec.rb[1:1]      | passed | 3.12 seconds    |
-./spec/features/weekly_overview_spec.rb[1:1]  | passed | 7.25 seconds    |
+./spec/features/daily_reflection_spec.rb[1:1] | passed | 5.52 seconds    |
+./spec/features/daily_reflection_spec.rb[1:2] | passed | 2.47 seconds    |
+./spec/features/daily_relaxation_spec.rb[1:1] | passed | 17.55 seconds   |
+./spec/features/login_spec.rb[1:1]            | passed | 1.45 seconds    |
+./spec/features/login_spec.rb[1:2]            | passed | 0.62005 seconds |
+./spec/features/web_session_spec.rb[1:1]      | passed | 2.86 seconds    |
+./spec/features/weekly_overview_spec.rb[1:1]  | passed | 6.96 seconds    |

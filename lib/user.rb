@@ -35,7 +35,23 @@ class Participant
     fill_in 'Password', with: 'fakepassword'
   end
 
+  def click_home_icon
+    find('#home_nav').click
+  end
+
   def has_home_visible?
     has_text? "Welcome, #{@ptp_name}"
+  end
+
+  def click_submit
+    click_on 'Submit'
+  end
+
+  def click_continue
+    click_on 'Continue'
+  end
+
+  def scroll_down
+    execute_script('window.scrollBy(0,1500)')
   end
 end

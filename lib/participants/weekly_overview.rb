@@ -9,10 +9,6 @@ class Participant
       find('#lesson').click
     end
 
-    def click_continue
-      click_on 'Continue'
-    end
-
     def has_slide_visible?
       has_text? 'Title'
     end

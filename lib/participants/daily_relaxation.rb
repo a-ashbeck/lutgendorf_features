@@ -23,10 +23,6 @@ class Participant
       execute_script("$(\"input#range\").val(#{rand(10)})")
     end
 
-    def click_continue
-      click_on 'Continue'
-    end
-
     def click_week_1_audio
       click_on 'Week 1: Deep Breathing & Progressive Muscle Relaxation'
     end
@@ -75,10 +71,6 @@ class Participant
       has_css?('#modal-window')
     end
 
-    # def listen_to_audio
-    #   sleep(0.25)
-    # end
-
     def click_play
       click_on 'play'
     end
@@ -111,14 +103,6 @@ class Participant
     def has_post_relaxation_rating_page?
       has_text? 'Using the following scale, rate your stress level right ' \
                 'now after you have practiced your relaxation session'
-    end
-
-    def click_submit
-      click_on 'Submit'
-    end
-
-    def has_home_visible?
-      has_css?('#logo-text')
     end
   end
 end
