@@ -40,29 +40,17 @@ feature 'Participant completes daily relaxation' do
 
     daily_relaxation.move_slider
     participant_1.click_continue
-
     audio_test { daily_relaxation.click_week_1_audio }
-
     audio_test { daily_relaxation.click_week_2a_audio }
-
     audio_test { daily_relaxation.click_week_2b_audio }
-
     audio_test { daily_relaxation.click_week_3_audio }
-
     audio_test { daily_relaxation.click_week_4_audio }
-
     audio_test { daily_relaxation.click_week_5_audio }
-
     audio_test { daily_relaxation.click_week_6_audio }
-
     audio_test { daily_relaxation.click_week_7_audio }
-
     audio_test { daily_relaxation.click_week_8_audio }
-
     audio_test { daily_relaxation.click_week_9_audio }
-
     audio_test { daily_relaxation.click_week_10_audio }
-
     participant_1.scroll_down
     daily_relaxation.check_no_audio
     participant_1.click_continue

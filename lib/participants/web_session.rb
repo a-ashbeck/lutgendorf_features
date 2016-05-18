@@ -18,15 +18,6 @@ class Participant
       end
     end
 
-    def fill_form_post_web_session
-      find('.row', match: :first)
-      emotions = ['anxious', 'sad', 'confused', 'energy', 'fatigue']
-
-      emotions.each do |e|
-        find("#group_session_mood_summary_post_#{e}_#{rand(4)}").click
-      end
-    end
-
     def click_go_to_web_session
       click_on 'Go to your web session'
     end
