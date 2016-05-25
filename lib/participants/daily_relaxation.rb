@@ -1,6 +1,6 @@
 # filename: ./lib/daily_relaxation.rb
 
-class Participant
+module Participants
   # Page object for Daily Relaxation
   class DailyRelaxation
     include Capybara::DSL

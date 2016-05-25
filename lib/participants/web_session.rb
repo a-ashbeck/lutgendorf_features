@@ -1,6 +1,6 @@
 # filename: ./lib/web_session.rb
 
-class Participant
+module Participants
   # Page object for Web Session
   class WebSession
     include Capybara::DSL

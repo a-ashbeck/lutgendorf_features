@@ -12,7 +12,7 @@ def participant_1
 end
 
 def daily_reflection
-  @daily_reflection ||= Participant::DailyReflection.new
+  @daily_reflection ||= Participants::DailyReflection.new
 end
 
 feature 'Participant selects daily reflection' do

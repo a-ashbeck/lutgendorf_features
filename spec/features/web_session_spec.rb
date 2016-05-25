@@ -12,7 +12,7 @@ def participant_1
 end
 
 def web_session
-  @web_session ||= Participant::WebSession.new
+  @web_session ||= Participants::WebSession.new
 end
 
 feature 'Participant selects web session' do

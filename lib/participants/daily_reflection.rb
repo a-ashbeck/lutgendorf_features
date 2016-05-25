@@ -1,6 +1,6 @@
 # filename: ./lib/daily_reflection.rb
 
-class Participant
+module Participants
   # Page object for Daily Reflection
   class DailyReflection
     include Capybara::DSL

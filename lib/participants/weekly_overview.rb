@@ -1,6 +1,6 @@
 # filename: ./lib/weekly_overview.rb
 
-class Participant
+module Participants
   # Page object for Weekly Ovierview
   class WeeklyOverview
     include Capybara::DSL

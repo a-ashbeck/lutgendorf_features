@@ -12,7 +12,7 @@ def participant_1
 end
 
 def daily_relaxation
-  @daily_relaxation ||= Participant::DailyRelaxation.new
+  @daily_relaxation ||= Participants::DailyRelaxation.new
 end
 
 def check_audio

@@ -12,7 +12,7 @@ def participant_1
 end
 
 def weekly_overview
-  @weekly_overview ||= Participant::WeeklyOverview.new
+  @weekly_overview ||= Participants::WeeklyOverview.new
 end
 
 def check_slides
