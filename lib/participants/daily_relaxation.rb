@@ -10,7 +10,7 @@ module Participants
     end
 
     def open
-      find('#daily_relaxation_practice').click
+      find('h3', text: 'Daily Relaxation').click
     end
 
     def visible?

@@ -6,7 +6,7 @@ module Participants
     include Capybara::DSL
 
     def click_weekly_overview
-      find('#lesson').click
+      find('h3', text: 'Weekly Overview').click
     end
 
     def has_slide_visible?
@@ -14,10 +14,18 @@ module Participants
     end
 
     def click_chapter_cycle
-      (0..9).each do |i|
-        find("#lesson-#{i}").click
+      (1..10).each do |i|
+        sleep(0.25)
+        scroll_down
+        find('h3', text: "#{i}. ").click
         yield
       end
+    end
+
+    private
+
+    def scroll_down
+      execute_script('window.scrollBy(0,15000)')
     end
   end
 end

@@ -6,7 +6,7 @@ module Participants
     include Capybara::DSL
 
     def open
-      find('#daily_journal').click
+      find('h3', text: 'Daily Reflection').click
     end
 
     def click_todays_reflection

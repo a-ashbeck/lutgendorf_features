@@ -6,7 +6,7 @@ module Participants
     include Capybara::DSL
 
     def click_web_session
-      find('#webex_session').click
+      find('h3', text: 'Web Session').click
     end
 
     def fill_form_pre_web_session
