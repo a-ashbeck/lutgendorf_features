@@ -43,6 +43,8 @@ class Participant
 
   def click_continue
     click_on 'Continue'
+  rescue Capybara::Poltergeist::MouseEventFailed
+    find('input[value = "Continue"]').trigger('click')
   end
 
   def scroll_down

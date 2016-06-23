@@ -31,9 +31,17 @@ module Participants
       window = page.driver.browser.window_handles
 
       if window.size > 1
-        page.driver.browser.switch_to.window(window.last)
-        page.driver.browser.close
-        page.driver.browser.switch_to.window(window.first)
+        switch_to_window(window.last)
+        execute_script 'window.close()'
+        switch_to_window(window.first)
+      end
+    end
+
+    def switch_to_window(tab)
+      if ENV['driver'] == 'poltergeist'
+        page.driver.browser.switch_to_window(tab)
+      else
+        page.driver.browser.switch_to.window(tab)
       end
     end
   end
