@@ -24,47 +24,47 @@ module Participants
     end
 
     def click_week_1_audio
-      click_on 'Week 1: Deep Breathing & Progressive Muscle Relaxation'
+      custom_click 'Week 1: Deep Breathing & Progressive Muscle Relaxation'
     end
 
     def click_week_2a_audio
-      click_on 'Week 2a'
+      custom_click 'Week 2a'
     end
 
     def click_week_2b_audio
-      click_on 'Week 2b'
+      custom_click 'Week 2b'
     end
 
     def click_week_3_audio
-      click_on 'Week 3: Autogenics'
+      custom_click 'Week 3: Autogenics'
     end
 
     def click_week_4_audio
-      click_on 'Week 4: Compassion Body Scan'
+      custom_click 'Week 4: Compassion Body Scan'
     end
 
     def click_week_5_audio
-      click_on 'Week 5: River Meditation'
+      custom_click 'Week 5: River Meditation'
     end
 
     def click_week_6_audio
-      click_on 'Week 6: Mindfulness 1'
+      custom_click 'Week 6: Mindfulness 1'
     end
 
     def click_week_7_audio
-      click_on 'Week 7: Mindfulness 2'
+      custom_click 'Week 7: Mindfulness 2'
     end
 
     def click_week_8_audio
-      click_on 'Week 8: Loving Kindness'
+      custom_click 'Week 8: Loving Kindness'
     end
 
     def click_week_9_audio
-      click_on 'Week 9: Light Imagery'
+      custom_click 'Week 9: Light Imagery'
     end
 
     def click_week_10_audio
-      click_on 'Week 10: Cove'
+      custom_click 'Week 10: Cove'
     end
 
     def has_audio_modal_visible?
@@ -72,33 +72,55 @@ module Participants
     end
 
     def click_play
-      click_on 'play'
+      special_click 'play'
     end
 
     def click_stop
-      click_on 'stop'
+      special_click 'stop'
     end
 
     def click_mute
-      click_on 'mute'
+      special_click 'mute'
     end
 
     def click_unmute
-      click_on 'unmute'
+      special_click 'unmute' 
     end
 
     def click_close
-      click_on 'Close'
+      special_click 'Close'
     end
 
     def check_no_audio
-      check 'Check if you prefer to guide this ' \
-            'relaxation session without audio.'
+      if ENV['driver'] == 'poltergeist'
+        find('#listening_self_guided').trigger('click')
+      else
+        check 'Check if you prefer to guide this ' \
+              'relaxation session without audio.'
+      end
     end
 
     def has_post_relaxation_rating_page?
       has_text? 'Using the following scale, rate your stress level right ' \
                 'now after you have practiced your relaxation session'
+    end
+
+    private
+
+    def special_click(link)
+      tries ||= 2
+      click_on link
+    rescue Capybara::ElementNotFound
+      execute_script('location.reload()')
+      retry unless(tries -= 1).zero?
+    end
+
+    def custom_click(link)
+      if ENV['driver'] == 'poltergeist'
+        find('a', text: link).trigger('click')
+      else
+        click_on link
+      end
     end
   end
 end

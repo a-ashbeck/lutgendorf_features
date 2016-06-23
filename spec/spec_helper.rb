@@ -44,7 +44,7 @@ Capybara.configure do |config|
     config.page.driver.browser.manage.window.resize_to(1280, 743)
   end
   config
-    .save_path = "#{ENV['Path']}/conemo_dashboard_features/spec/screenshots/"
+    .save_path = "#{ENV['Path']}/lutgendorf_features/spec/screenshots/"
 end
 
 # capybara-screenshot configuration options
