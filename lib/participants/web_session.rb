@@ -37,6 +37,8 @@ module Participants
       end
     end
 
+    private
+
     def switch_to_window(tab)
       if ENV['driver'] == 'poltergeist'
         page.driver.browser.switch_to_window(tab)

@@ -23,14 +23,6 @@ module Participants
       execute_script("$(\"input#range\").val(#{rand(10)})")
     end
 
-    def custom_click(link)
-      if ENV['driver'] == 'poltergeist'
-        find('a', text: link).trigger('click')
-      else
-        click_on link
-      end
-    end
-
     def click_week_1_audio
       custom_click 'Week 1: Deep Breathing & Progressive Muscle Relaxation'
     end
@@ -95,14 +87,6 @@ module Participants
       special_click 'unmute' 
     end
 
-    def special_click(link)
-      tries ||= 2
-      click_on link
-    rescue Capybara::ElementNotFound
-      execute_script('location.reload()')
-      retry unless(tries -= 1).zero?
-    end
-
     def click_close
       special_click 'Close'
     end
@@ -119,6 +103,24 @@ module Participants
     def has_post_relaxation_rating_page?
       has_text? 'Using the following scale, rate your stress level right ' \
                 'now after you have practiced your relaxation session'
+    end
+
+    private
+
+    def special_click(link)
+      tries ||= 2
+      click_on link
+    rescue Capybara::ElementNotFound
+      execute_script('location.reload()')
+      retry unless(tries -= 1).zero?
+    end
+
+    def custom_click(link)
+      if ENV['driver'] == 'poltergeist'
+        find('a', text: link).trigger('click')
+      else
+        click_on link
+      end
     end
   end
 end
